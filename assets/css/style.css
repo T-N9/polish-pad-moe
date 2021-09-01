@@ -1,0 +1,634 @@
+/**
+* Template Name: PolishPad - v1.0
+* Template URL: https://zohirs.com
+* Author: Zohir
+*/
+
+:root {
+    --pp-main: #fb2f74;
+    --pp-primary: #f2bac4;
+    --pp-secondary: #82ecf3;
+    --pp-accent: #00b4ef;
+    --pp-white: #ffffff;
+    --pp-purple: #cd76bf;
+    --pp-orange: #fe6a18;
+    --pp-gradient: linear-gradient( 180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0) );
+    --pp-font-serif: "Abhaya Libre", serif;
+    --pp-font-main: "Anton", sans-serif;
+    --pp-font-secondary: "Spartan", sans-serif;
+    --pp-font-accent: "Myriad Pro", sans-serif;
+    --pp-font-assistant: 'Assistant', sans-serif;
+  }
+  
+  /*--------------------------------------------------------------
+  # General
+  --------------------------------------------------------------*/
+  body {
+    font-family: var(--pp-font-main);
+    color: var(--pp-main);
+    font-size: 16px;
+  }
+  
+  a {
+    color: var(--pp-main);
+    text-decoration: none;
+  }
+  
+    a:hover {
+      color: #3291e6;
+      text-decoration: none;
+    }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--pp-font-main);
+    /* font-weight: 600; */
+  }
+  
+  @media (max-width: 992px) {
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  /*--------------------------------------------------------------
+  # Preloader
+  --------------------------------------------------------------*/
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: var(--pp-white);
+  }
+  
+    #preloader:before {
+      content: "";
+      position: fixed;
+      top: calc(50% - 30px);
+      left: calc(50% - 30px);
+      border: 6px solid var(--pp-main);
+      border-top-color: var(--pp-secondary);
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      -webkit-animation: animate-preloader 1s linear infinite;
+      animation: animate-preloader 1s linear infinite;
+    }
+  
+  @-webkit-keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .pwu-main{
+    overflow-x: hidden;
+  }
+  
+/*__________________________________________
+|
+|
+|            Log In Page 
+|__________________________________________*/
+.login-content {
+    padding: 0;
+}
+
+.login-content .login-section {
+    padding: 70px 0px;
+}
+
+@media (min-width:1366px){
+  .login-content .login-section {
+    margin: auto;
+    padding:0;
+  }
+}
+
+.login-content .login-section .form-wrapper h1{
+ font-size: 36px;
+ text-align: center;
+ font-weight: 400;
+}
+
+@media (min-width:1366px){
+  .login-content .login-section .form-wrapper h1{
+    font-size: 48px;
+   }
+}
+
+.login-content .login-section .form-wrapper .reglog-google{
+    display: block;
+    width: 283px;
+    height: 38px;
+    margin: auto;
+    padding: 10px 30px;
+    border: 1px solid #b1b1b1;
+    box-shadow: 0px 4px 4px #00000025;
+    margin-top: 18px;
+    margin-bottom: 50px;
+}
+
+.login-content .login-section .form-wrapper .reglog-google img{
+    width: 18px;
+    height: 18px;
+}
+
+.login-content .login-section .form-wrapper .reglog-google p{
+    font-family: var(--pp-font-assistant);
+    font-weight: 700;
+    color: #64616172;
+    margin-bottom: 0 !important;
+    margin-left: 45px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--pp-main);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--pp-main);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--pp-main);
+  }
+
+  @media (min-width: 1440px){
+    .login-content {
+      width: 1366px;
+    }
+  }
+
+@media (min-width: 1366px){
+  .login-content {
+    height: 100vh;
+  }
+}
+
+.login-content .login-section .form-wrapper .login-form{
+    display: block;
+    width: 283px;
+    margin: auto;
+}
+
+.login-content .login-section .form-wrapper .login-form input{
+    width: 100%;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    font-size: 16px;
+    border-bottom: #B1B1B1 solid 1px;
+    color: var(--pp-main);
+    margin-bottom: 12px;
+    font-family: var(--pp-font-assistant);
+}
+
+.reglog-btn{
+    width: 105px;
+    height: 39px;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--pp-font-main);  
+    padding:  0px 20px;
+    font-size: 24px;
+    color: #646161;
+  
+    border: none;
+    outline: none;
+    background-color: white;
+    border: 1.5px solid var(--pp-main);
+    box-shadow: 0px 4px 8px var(--pp-secondary);
+}
+
+.login-content .login-section .form-wrapper .forgot-pwd{
+    display: block;
+    text-align: center;
+    font-family: var(--pp-font-assistant) !important;
+    font-size: 12px;
+    margin: auto;
+    margin-top: 32px;
+}
+
+.login-content .login-section .form-wrapper .signup-acc{
+    font-family: var(--pp-font-assistant);
+    color: #646161;
+    font-size: 12px;
+    margin-top: 55px;
+}
+
+.login-content .login-section .form-wrapper .cus-booking{
+  font-family: var(--pp-font-assistant);
+  color: #646161;
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+.login-content .login-media {
+    background-color: rgba(243, 48, 113, 0.26);
+    padding: 25px 0 30px 0;
+    position: relative;
+    
+}
+
+@media (min-height:739px) and (min-width:1000px){
+  .login-content .login-media {
+    padding-top: 125px;
+  }
+}
+
+@media (min-width:1366px){
+  .login-content .login-media {
+    width: 777px;
+  }
+}
+
+.login-content .login-media .media-wrapper .logo-img{
+    display: block;
+    width: 125px;
+    height: 39px;
+    margin: auto;
+}
+
+.login-content .login-media .media-wrapper .reglog-img{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.login-content .login-media .media-wrapper .md-title{
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: white !important;
+    text-shadow: 4px 4px 20px #FF0055;
+}
+
+.login-content .login-media .media-wrapper .lg-heading{
+  font-weight: 400;
+  font-size: 55px;
+  text-align: center;
+  color: white !important;
+  text-shadow: 4px 4px 20px #FF0055;
+}
+
+.login-content .login-media .media-wrapper .lg-title{
+  font-weight: 400;
+  font-size: 72px;
+  text-align: center;
+  color: white !important;
+  text-shadow: 4px 4px 20px #FF0055;
+}
+
+/*__________________________________________
+|
+|
+|            Sign Up Page 
+|__________________________________________*/
+
+.signup-content {
+  padding: 0;
+}
+
+.signup-content .signup-section {
+  padding: 70px 0px;
+}
+
+@media (min-width:1366px){
+.signup-content .signup-section {
+  margin: auto;
+  padding-top: 90px;
+  padding-bottom: 70px;
+}
+}
+
+.signup-content .signup-section .form-wrapper h1{
+font-size: 36px;
+text-align: center;
+font-weight: 400;
+}
+
+@media (min-width:1366px){
+.signup-content .signup-section .form-wrapper h1{
+  font-size: 48px;
+ }
+}
+
+.signup-content .signup-section .form-wrapper .reglog-google{
+  display: block;
+  width: 283px;
+  height: 38px;
+  margin: auto;
+  padding: 10px 30px;
+  border: 1px solid #b1b1b1;
+  box-shadow: 0px 4px 4px #00000025;
+  margin-top: 18px;
+  margin-bottom: 50px;
+}
+
+.signup-content .signup-section .form-wrapper .reglog-google img{
+  width: 18px;
+  height: 18px;
+}
+
+.signup-content .signup-section .form-wrapper .reglog-google p{
+  font-family: var(--pp-font-assistant);
+  font-weight: 700;
+  color: #64616172;
+  margin-bottom: 0 !important;
+  margin-left: 45px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--pp-main);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--pp-main);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--pp-main);
+}
+
+@media (min-width: 1440px){
+  .signup-content {
+    width: 1366px;
+  }
+}
+
+@media (min-width: 1366px){
+.signup-content {
+  /* height: 100vh; */
+}
+}
+
+.signup-content .signup-section .form-wrapper .signup-form{
+  display: block;
+  width: 283px;
+  margin: auto;
+}
+
+.signup-content .signup-section .form-wrapper .signup-form input{
+  width: 100%;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  font-size: 16px;
+  border-bottom: #B1B1B1 solid 1px;
+  color: var(--pp-main);
+  margin-bottom: 12px;
+  font-family: var(--pp-font-assistant);
+}
+
+.reglog-btn{
+  width: 105px;
+  height: 39px;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--pp-font-main);  
+  padding:  0px 20px;
+  font-size: 24px;
+  color: #646161;
+
+  border: none;
+  outline: none;
+  background-color: white;
+  border: 1.5px solid var(--pp-main);
+  box-shadow: 0px 4px 8px var(--pp-secondary);
+}
+
+.signup-content .signup-section .form-wrapper .forgot-pwd{
+  display: block;
+  text-align: center;
+  font-family: var(--pp-font-assistant) !important;
+  font-size: 12px;
+  margin: auto;
+  margin-top: 32px;
+}
+
+.signup-content .signup-section .form-wrapper .signup-acc{
+  font-family: var(--pp-font-assistant);
+  color: #646161;
+  font-size: 12px;
+  margin-top: 55px;
+}
+
+.signup-content .signup-section .form-wrapper .cus-booking{
+font-family: var(--pp-font-assistant);
+color: #646161;
+font-size: 12px;
+margin-top: 40px;
+}
+
+.signup-content .signup-media {
+  background-color: rgba(243, 48, 113, 0.26);
+  padding: 25px 0 30px 0;
+  position: relative;
+  
+}
+
+@media (min-height:739px) and (min-width:1000px){
+.signup-content .signup-media {
+  /* padding-top: 125px; */
+}
+}
+
+@media (min-width:1366px){
+.signup-content .signup-media {
+  width: 777px;
+  padding-top: 125px;
+}
+}
+
+.signup-content .signup-media .media-wrapper .logo-img{
+  display: block;
+  width: 125px;
+  height: 39px;
+  margin: auto;
+}
+
+.signup-content .signup-media .media-wrapper .reglog-img{
+position: absolute;
+width: 100%;
+left: 0;
+bottom: 0;
+}
+
+.signup-content .signup-media .media-wrapper .md-title{
+  margin-top: 32px;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: white !important;
+  text-shadow: 4px 4px 20px #FF0055;
+}
+
+.signup-content .signup-media .media-wrapper .lg-heading{
+font-weight: 400;
+font-size: 55px;
+text-align: center;
+color: white !important;
+text-shadow: 4px 4px 20px #FF0055;
+}
+
+.signup-content .signup-media .media-wrapper .lg-title{
+font-weight: 400;
+font-size: 72px;
+text-align: center;
+color: white !important;
+text-shadow: 4px 4px 20px #FF0055;
+}
+
+.signup-content .signup-form{
+  font-family: var(--pp-font-assistant) !important;
+}
+
+.signup-content .signup-form .input-wrapper{
+  width: 280px;
+}
+
+.signup-content .signup-form .input-wrapper #mobile-number{
+  width: 142px;
+}
+
+.signup-content .signup-form .input-wrapper #postcode{
+  width: 107px;
+}
+
+.signup-content .signup-form .input-wrapper .toggle{
+  position: relative;
+  width: 40px;
+  height: 12px;
+  border-radius: 19.5px;
+  background-color: #c4c4c4;
+  cursor: pointer;
+}
+
+.signup-content .signup-form .input-wrapper .toggle:active::before{
+  left: unset;
+  right: 0;
+}
+.signup-content .signup-form .input-wrapper .toggle:focus::before{
+  left: unset;
+  right: 0;
+}
+
+.signup-content .signup-form .input-wrapper .mobile-tech{
+  color: #646161;
+  margin: 20px 0;
+}
+
+.signup-content .signup-form .input-wrapper .mobile-tech p{
+  margin-bottom: 0;
+  line-height: 0.7;
+}
+
+.signup-content .signup-form .input-wrapper .toggle::before{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 4px 4px rgba(0,0,0, 0.25);
+  border: 0.25px solid #B1B1B1;
+  z-index: 5;
+  transition: all 200ms ease-in-out ;
+}
+
+.signup-content .signup-form .input-wrapper .text-gray::placeholder{
+  color: #646161;
+  opacity: 1;
+}
+
+.signup-content .signup-form .input-wrapper .text-gray:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #646161;
+}
+
+.signup-content .signup-form .input-wrapper .text-gray::-ms-input-placeholder { /* Microsoft Edge */
+  color:#646161;
+}
+
+.signup-content .signup-agreement{
+  color: #616161;
+  /* padding: 0 42px; */
+  margin-top: 10px;
+}
+
+.signup-content .signup-agreement input{
+  border: 1px solid rgba(161, 79, 79, 0.63) !important;
+  width: 16.5px !important;
+  height: 15px;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  background-color: rgba(196, 196, 196, 0.19);
+  cursor: pointer;
+}
+
+.signup-content .signup-agreement input:checked{
+  background-color: var(--pp-main);
+  background-size: 80%;
+  border: 1px solid var(--pp-secondary) ;
+}
+
+.signup-content .signup-agreement label{
+  margin-top: -3px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.signup-content .signup-agreement label a{
+  text-decoration: underline;  
+}
+
+.signup-content .signup-form .login-text{
+  margin-top: 22px;
+  color: #646161;
+  margin-bottom: 5px;
+}
+
+@media (max-width:576px){
+  .signup-content .signup-form .login-text{
+    margin-top: 35px;
+  }
+}
