@@ -118,6 +118,11 @@
 |
 |            Log In Page 
 |__________________________________________*/
+
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
 .login-content {
     padding: 0;
 }
@@ -126,12 +131,40 @@
     padding: 70px 0px;
 }
 
+@media (min-width:768px){
+
+  .login-content .login-section  {
+    margin-top: 100px;
+   }
+
+  .login-content .login-section .form-wrapper {
+    transform: scale(1.4);
+   }
+}
+
+@media (min-width:1024px){
+  .login-content .login-section .form-wrapper {
+    transform: scale(1);
+   }
+
+   .login-content .login-section {
+    margin: auto;
+    margin-top: 100px;
+}
+}
+
 @media (min-width:1366px){
   .login-content .login-section {
     margin: auto;
     padding:0;
   }
+
+  .login-content .login-section .form-wrapper {
+    transform: scale(1);
+   }
 }
+
+
 
 .login-content .login-section .form-wrapper h1{
  font-size: 36px;
@@ -259,12 +292,19 @@
     background-color: rgba(243, 48, 113, 0.26);
     padding: 25px 0 30px 0;
     position: relative;
+    width: 100%;
     
 }
 
 @media (min-height:739px) and (min-width:1000px){
   .login-content .login-media {
     padding-top: 125px;
+  }
+}
+
+@media (min-width:1024px){
+  .login-content .login-media {
+    width: 55%;
   }
 }
 
@@ -291,7 +331,7 @@
 .login-content .login-media .media-wrapper .md-title{
     margin-top: 32px;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 36px;
     text-align: center;
     color: white !important;
     text-shadow: 4px 4px 20px #FF0055;
@@ -325,6 +365,29 @@
 
 .signup-content .signup-section {
   padding: 70px 0px;
+}
+
+@media (min-width:768px){
+
+  .signup-content .signup-section  {
+    margin-top: 150px;
+    margin-bottom: 100px;
+   }
+
+  .signup-content .signup-section .form-wrapper {
+    transform: scale(1.4);
+   }
+}
+
+@media (min-width:1024px){
+  .signup-content .signup-section .form-wrapper {
+    transform: scale(1);
+   }
+
+   .signup-content .signup-section {
+    margin: auto;
+    /* margin-top: 150px; */
+}
 }
 
 @media (min-width:1366px){
@@ -464,6 +527,13 @@ margin-top: 40px;
   
 }
 
+@media (min-width:1024px){
+  .signup-content .signup-media {
+    width: 55%;
+    padding-top: 125px;
+  }
+}
+
 @media (min-height:739px) and (min-width:1000px){
 .signup-content .signup-media {
   /* padding-top: 125px; */
@@ -494,7 +564,7 @@ bottom: 0;
 .signup-content .signup-media .media-wrapper .md-title{
   margin-top: 32px;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 36px;
   text-align: center;
   color: white !important;
   text-shadow: 4px 4px 20px #FF0055;
