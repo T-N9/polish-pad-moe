@@ -1031,7 +1031,7 @@ text-shadow: 4px 4px 20px #FF0055;
 |__________________________________________*/
 .pf-page-bg{
   background-color: #F1F1F1;
-  /* height: 150vh; */
+  height: 450vh;
 }
 
 .pf-landing{
@@ -1114,7 +1114,8 @@ text-shadow: 4px 4px 20px #FF0055;
 
 .pf-information .separator{
   width: 100%;
-  border: 1px solid rgba(177, 177, 177, 1)
+  height: 1px;
+  background-color: rgba(177, 177, 177, 1);
 }
 
 .pf-information .pf-review .rating{
@@ -1142,7 +1143,7 @@ text-shadow: 4px 4px 20px #FF0055;
 
 @media (min-width:1366px){
   .pf-slider{
-    padding-left: 5px;
+    padding-left: 0px;
   }
 }
 
@@ -1309,6 +1310,124 @@ text-shadow: 4px 4px 20px #FF0055;
   .pf-about p{
     text-align: justify;
   }
+}
+
+.pf-service{
+  background-color: white;
+  padding: 30px 30px;
+  width: 1160px;
+  margin-top: 20px;
+}
+
+@media (max-width:1024px){
+  .pf-service{
+    width: unset;
+  }
+}
+
+.pf-service h1{
+  font-size: 24px;
+}
+
+.pf-service .separator{
+  width: 100%;
+  height: 1px;
+  background-color: rgba(177, 177, 177, 1);
+  margin-top: 5px;
+}
+
+.pf-service .cate-col {
+  padding: 0;
+}
+
+.pf-service .choice-col {
+  padding-left: 0;
+}
+
+.pf-service .service-cate {
+  width: 310px;
+  margin-left: auto;
+  margin-top: 35px;
+  border-right: 1px solid #F33071;
+}
+
+@media (max-width:1024px){
+  .pf-service .service-cate{
+    width: unset;
+    padding-left: 15px;
+  }
+}
+
+.pf-service li{
+  font-family: var(--pp-font-assistant) !important;
+  color: #000000;
+  font-weight: 600;
+  transition: all 200ms ease-out;
+  cursor: pointer;
+  padding: 2px 0;
+  margin-bottom: 5px;
+}
+
+.pf-service li:hover{
+  background-color: #F1F1F1;
+}
+
+.pf-service .service-cate li{
+  /* padding: 2px 0;
+  margin-bottom: 5px; */
+}
+
+.pf-service .service-choice{
+  margin-top: 35px;
+}
+
+.pf-service .service-choice li{
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 35px;
+  justify-content: space-between;
+}
+
+@media (max-width:576px){
+  .pf-service .service-choice li{
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+}
+
+.pf-service .service-choice input{
+  border: 1px solid rgba(90, 90, 90, 0.63) !important;
+  width: 15.5px !important;
+  height: 15px;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  background-color: rgba(196, 196, 196, 0.19);
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.pf-service .service-choice input:checked{
+  background-color: var(--pp-main);
+  background-size: 80%;
+  border: 1px solid var(--pp-secondary) ;
+}
+
+.pf-service .service-choice .service-btn{
+  border: 0;
+  outline: 0;
+  margin-top: 30px;
+  width: 159px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  color: white;
+  background-color: #F33071;
+  font-size: 18px;
+  font-weight: 400;
+  box-shadow: 0 4px 10px #F33071;
 }
 
 /*--------------------------------------------------------------
