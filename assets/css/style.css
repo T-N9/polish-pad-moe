@@ -1031,30 +1031,50 @@ text-shadow: 4px 4px 20px #FF0055;
 |__________________________________________*/
 .pf-page-bg{
   background-color: #F1F1F1;
-  height: 100vh;
+  height: 150vh;
 }
 
 .pf-landing{
   padding-top: 20px;
 }
 
-@media (max-width:576px){
+@media (max-width:768px){
   .pf-landing{
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+  .pf-landing .row{
+    margin: auto;
+    width: 100%;
+  }
 }
+
+.pf-landing .first-col{
+  width: 396px;
+}
+
+@media (max-width:1024px){
+  .pf-landing .first-col{
+    width: 100%;
+  }
+}
+
+
 
 .pf-information{
   background-color: white;
-  padding: 40px 38px;
-  padding-bottom: 20px;
+  padding: 40px 35px;
+  width: 374.89px;
+  height: 373px;
+  padding-bottom: 0px;
   /* margin-right: 10px; */
 }
 
-@media (max-width:768px){
+@media (max-width:1024px){
   .pf-information{
+    width: 100%;
     margin-right: 0px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1071,7 +1091,7 @@ text-shadow: 4px 4px 20px #FF0055;
 
 .pf-information .pf-name-add .name{
   font-size: 24px;
-  margin-top: 22px;
+  margin-top: 20px;
 }
 
 .pf-information p{
@@ -1082,7 +1102,7 @@ text-shadow: 4px 4px 20px #FF0055;
 }
 
 .pf-information .pf-name-add .address{
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 .pf-information .separator{
@@ -1095,6 +1115,7 @@ text-shadow: 4px 4px 20px #FF0055;
   font-size: 1.725rem;
   text-align: center;
   margin-top: 12px;
+  line-height: 1;
 }
 
 .pf-information .pf-review .checked{
@@ -1108,9 +1129,31 @@ text-shadow: 4px 4px 20px #FF0055;
 
 
 .pf-slider{
-  /* width: 347px;
+  width: 373px;
   height: 373px;
-  background-color: yellow; */
+}
+
+@media (max-width:1024px){
+  .pf-slider{
+    padding: 0 !important;
+  }
+}
+
+@media (max-width:768px){
+  .pf-slider{
+    width: 360px;
+    height: 360px;
+  }
+}
+
+@media (max-width:576px){
+  .pf-slider{
+    width: 330px;
+    height: 330px;
+    margin: auto;
+    margin-bottom: 20px;
+    
+  }
 }
 
 .carousel-indicators [data-bs-target] {
@@ -1120,6 +1163,24 @@ text-shadow: 4px 4px 20px #FF0055;
   opacity: 1;
   background-color: white;
 }
+.carousel {
+  width: 373px;
+  height: 373px;
+}
+
+@media (max-width:768px){
+  .carousel {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+@media (max-width:576px){
+  .carousel {
+    width: 330px;
+    height: 330px;
+  }
+}
 
 .carousel-indicators .active {
   opacity: 1;
@@ -1127,9 +1188,77 @@ text-shadow: 4px 4px 20px #FF0055;
 }
 
 .pf-schedule{
-  width: 347px;
+  width: 373px;
   height: 373px;
-  background-color: green;
+  background-color: white;
+  margin-left: 30px;
+  padding: 18px 50px;
+  padding-right: 30px;
+}
+
+@media (max-width:768px){
+  .pf-schedule{
+    margin-left: 20px;
+    width: 360px;
+    height: 360px;
+  }
+}
+
+@media (max-width:576px){
+  .pf-schedule{
+    margin-left: 0;
+    width: 330px;
+    height: auto;
+    padding: 18px 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+  }
+}
+
+.pf-schedule p{
+  font-family: var(--pp-font-assistant) !important;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 600;
+  
+}
+
+.pf-schedule .schedule-heading{
+  font-size: 18px;
+}
+
+.pf-schedule .schedule-booking{
+  border: 0;
+  outline: 0;
+  margin-top: 20px;
+  width: 175px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  color: #f33071;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 400;
+  border: 1px solid #4EEBF5;
+  box-shadow: 0 4px 10px #4EEBF5;
+}
+
+.pf-schedule .days p,.pf-schedule .status-hour p{
+  font-size: 16px;
+  margin-bottom: 0 !important;
+  line-height: 30.93px;
+}
+
+.pf-schedule .days{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pf-schedule .status-hour{
+  background-color:rgba(243, 48, 113, 0.15);
+  padding: 10px 40px;
 }
 
 /*--------------------------------------------------------------
