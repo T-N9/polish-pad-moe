@@ -1031,7 +1031,7 @@ text-shadow: 4px 4px 20px #FF0055;
 |__________________________________________*/
 .pf-page-bg{
   background-color: #F1F1F1;
-  height: 150vh;
+  /* height: 150vh; */
 }
 
 .pf-landing{
@@ -1051,6 +1051,13 @@ text-shadow: 4px 4px 20px #FF0055;
 
 .pf-landing .first-col{
   width: 396px;
+  
+}
+
+@media (min-width:1366px){
+  .pf-landing .first-col{
+    padding-left: 0px;
+  }
 }
 
 @media (max-width:1024px){
@@ -1133,6 +1140,12 @@ text-shadow: 4px 4px 20px #FF0055;
   height: 373px;
 }
 
+@media (min-width:1366px){
+  .pf-slider{
+    padding-left: 5px;
+  }
+}
+
 @media (max-width:1024px){
   .pf-slider{
     padding: 0 !important;
@@ -1191,9 +1204,14 @@ text-shadow: 4px 4px 20px #FF0055;
   width: 373px;
   height: 373px;
   background-color: white;
-  margin-left: 30px;
+  margin-left: 18px;
   padding: 18px 50px;
   padding-right: 30px;
+}
+@media (min-width:1366px){
+  .pf-schedule{
+    /* padding-left: 5px; */
+  }
 }
 
 @media (max-width:768px){
@@ -1259,6 +1277,38 @@ text-shadow: 4px 4px 20px #FF0055;
 .pf-schedule .status-hour{
   background-color:rgba(243, 48, 113, 0.15);
   padding: 10px 40px;
+}
+
+.pf-about{
+  background-color: white;
+  padding: 40px 30px;
+  width: 1160px;
+  margin-top: 20px;
+}
+
+@media (max-width:1024px){
+  .pf-about{
+    width: unset;
+  }
+}
+
+.pf-about h1{
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.pf-about p{
+  margin-top: 20px;
+  font-family: var(--pp-font-assistant) !important;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+@media (max-width:576px){
+  .pf-about p{
+    text-align: justify;
+  }
 }
 
 /*--------------------------------------------------------------
