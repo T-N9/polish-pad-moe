@@ -1121,7 +1121,7 @@ text-shadow: 4px 4px 20px #FF0055;
 
 .pf-information .pf-review .rating{
   color: #c4c4c4;
-  font-size: 1.725rem;
+  font-size: 1.425rem;
   text-align: center;
   margin-top: 12px;
   line-height: 1;
@@ -1384,6 +1384,10 @@ text-shadow: 4px 4px 20px #FF0055;
   user-select: none;
 }
 
+.pf-service .tab-active{
+  background-color: #F1F1F1;
+}
+
 .pf-service li:hover{
   background-color: #F1F1F1;
 }
@@ -1631,7 +1635,7 @@ text-shadow: 4px 4px 20px #FF0055;
   font-size: 14px;
   font-weight: 400;
   color: #646161;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 
 .pf-cus-review .pf-review-right .review-comment .cus-comment{
