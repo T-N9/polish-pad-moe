@@ -1388,9 +1388,9 @@ text-shadow: 4px 4px 20px #FF0055;
   background-color: #F1F1F1;
 }
 
-.pf-service li:hover{
+/* .pf-service li:hover{
   background-color: #F1F1F1;
-}
+} */
 
 .pf-service .service-cate li{
   /* padding: 2px 0;
