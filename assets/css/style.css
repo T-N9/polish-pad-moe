@@ -1342,7 +1342,8 @@ text-shadow: 4px 4px 20px #FF0055;
 }
 
 .pf-service .choice-col {
-  padding-left: 0;
+  padding-left: 8px;
+  padding-right: 0px;
 }
 
 .pf-service .service-cate {
