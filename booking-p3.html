@@ -68,20 +68,22 @@
         </section>
 
         <section class="booking-appointment">
-            <div class="row">
+            <div class="row app-col">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="appointment-info card-style">
                         <h1>Appointment Details</h1>
+                        <div class="separator d-block d-md-none mb-4"></div>
                         <p>
                             <span class="ques">Date & Time : </span><span class="ans">Sep 2, 2021, 18:30 - 18:45</span>
-                            <p class="h-text">with</p>
+                            <p class="h-text d-none d-md-block">with</p>
                             <span class="ques">Chosen Tech : </span><span class="ans">Hannah</span>
                             <p class="h-text mt-4">Chosen Treatment : </p>
                             <span class="ques">Acrylic Nail Repair : </span><span class="ans"> £2.50</span> <br>
                             <span class="ques">Duration : </span><span class="ans"> £2.50</span>
                         </p>
                     </div>
-                    <div class="appointment-info card-style mt-4">
+                    <div class="separator d-block d-md-none"></div>
+                    <div class="appointment-info fee-info card-style mt-4">
                         <div>
                             <p class="mb-2"><span class="b-ques">Treatment Fee : </span><span class="ans"> £2.50</span></p>
                             <p class="mb-2"><span class="b-ques">Booking Fee : </span><span class="ans"> £2.50</span></p>
@@ -92,6 +94,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="extras-info card-style">
                         <h1>Extras</h1>
+                        <div class="separator d-block d-md-none mb-2"></div>
                         <form action="">
                             <label for="ph-number">
                                 To continue please provide us with your mobile phone number
@@ -113,17 +116,39 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card-info card-style">
                         <h1>Card Details</h1>
-                        <p>
-                            <span class="ques">Date & Time : </span><span class="ans">Sep 2, 2021, 18:30 - 18:45</span>
-                            <p class="h-text">with</p>
-                            <span class="ques">Chosen Tech : </span><span class="ans">Hannah</span>
-                            <p class="h-text">Chosen Treatment : </p>
-                            <span class="ques">Acrylic Nail Repair : </span><span class="ans"> £2.50</span>
-                            <span class="ques">Duration : </span><span class="ans"> £2.50</span>
-                        </p>
+                        <div class="separator d-block d-md-none mb-2"></div>
+                        <form action="">
+                            <label for="card-number">
+                                Card Number
+                            </label>
+                            <input type="number" name="card-number" id="card-number" placeholder="1234 1234 1234 1234">
+
+                            <label for="card-number">
+                                Card Expiry
+                            </label>
+                            <input type="text" name="card-number" id="card-number" placeholder="MM/YY">
+                            <label for="card-number">
+                                Card Expiry
+                            </label>
+                            <input type="text" name="card-number" id="card-number" placeholder="CVC">
+
+                            <div class="btn-wrapper">
+                                <button class="back-btn d-block d-md-none">
+                                    Back
+                                </button>
+                                <button class="payment-btn">
+                                    Make a Payment
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
+            <section class="booking-pagination d-none d-md-flex">
+                <button class="pagi-btn active-btn">
+                    Back
+                </button>
+            </section>
         </section>
         
     </main>

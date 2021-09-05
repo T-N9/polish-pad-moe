@@ -1669,8 +1669,13 @@ text-shadow: 4px 4px 20px #FF0055;
 }
 
 @media (max-width:576px){
-  .booking-heading {
+
+  .booking-heading  {
     padding: 20px 20px;
+  }
+  .booking-heading  img{
+    width: 85px;
+    height: 27px;
   }
 }
 
@@ -1980,7 +1985,14 @@ text-shadow: 4px 4px 20px #FF0055;
 }
 
 .booking-appointment{
+  margin-top: 75px;
+}
 
+@media (max-width:576px){
+  .booking-appointment{
+    margin-top: 0;
+    padding: 0 10px;
+  }
 }
 
 .booking-appointment .appointment-info{
@@ -1997,6 +2009,20 @@ text-shadow: 4px 4px 20px #FF0055;
   /* margin: auto; */
 }
 
+@media (max-width:1024px){
+  .booking-appointment .card-style{
+    width: unset;
+  }
+}
+
+@media (max-width:576px){
+  .booking-appointment .card-style{
+    border: none;
+    box-shadow: none;
+    padding: 5px 5px;
+  }
+}
+
 .booking-appointment .card-style h1{
   font-size: 29px;
   font-weight: 400;
@@ -2004,11 +2030,25 @@ text-shadow: 4px 4px 20px #FF0055;
   margin-bottom: 35px;
 }
 
+@media (max-width:576px){
+  .booking-appointment .card-style h1{
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+}
+
 .booking-appointment .card-style p{
   font-family: var(--pp-font-assistant) !important;
   color: black;
   font-size: 16px;
   margin-bottom: 0;
+}
+
+@media (max-width:576px){
+  .booking-appointment .card-style p{
+    font-size: 14px;
+  }
 }
 
 .booking-appointment .card-style span{
@@ -2030,6 +2070,12 @@ text-shadow: 4px 4px 20px #FF0055;
   font-weight: 600;
 }
 
+@media (max-width:576px) {
+  .booking-appointment .card-style .h-text{
+    font-size: 16px;
+  }
+}
+
 .booking-appointment .card-style .h-color{
   color: var(--pp-main);
 }
@@ -2041,10 +2087,22 @@ text-shadow: 4px 4px 20px #FF0055;
   margin-bottom: 0;
 }
 
+@media (max-width:576px) {
+  .booking-appointment .card-style form{
+    font-size: 14px;
+  }
+}
+
 .booking-appointment .card-style label{
   font-weight: 600;
   line-height: 21px;
   margin-bottom: 15px;
+}
+
+@media (max-width:576px) {
+  .booking-appointment .card-style label{
+    margin-bottom: 10px;
+  }
 }
 
 .booking-appointment .card-style form #ph-number{
@@ -2058,6 +2116,13 @@ text-shadow: 4px 4px 20px #FF0055;
   margin-bottom: 25px;
 }
 
+@media (max-width:576px) {
+  .booking-appointment .card-style form #ph-number{
+    padding: 10px;
+    border: 1px solid #b1b1b1;
+  }
+}
+
 .booking-appointment .card-style form textarea{
   width: 100%;
   height: 97px;
@@ -2069,7 +2134,121 @@ text-shadow: 4px 4px 20px #FF0055;
 .booking-appointment .extras-info{
   padding-left: 25px;
   padding-right: 25px;
-  margin-left: 15px;
+  margin-left: 3px;
+}
+
+@media (max-width:576px){
+  .booking-appointment .extras-info{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: unset;
+    margin-top: 10px;
+  }
+}
+
+.booking-appointment .card-info{
+  padding-left: 60px;
+  padding-right: 60px;
+  /* margin-left: 15px; */
+}
+
+@media (max-width:576px){
+  .booking-appointment .card-info{
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 25px;
+  }
+
+  .booking-appointment .fee-info{
+    margin-top: 5px !important;
+  }
+}
+
+.booking-appointment .card-info form input{
+  width: 100%;
+  border: 1px solid #C4C4C4;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+  border-radius: 0 !important;
+  -webkit-appearance: none;
+}
+
+.booking-appointment .card-info form label{
+  
+  margin-bottom: 5px;
+}
+
+.booking-appointment .card-info form input::placeholder{
+  color: #C4C4C4;
+}
+
+.booking-appointment .card-info form .payment-btn{
+  width: 147.74px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #F33071;
+  box-shadow: 0px 4px 4px #4EEBF5;
+  font-family: var(--pp-font-main);
+  font-size: 20px;
+  color: #B1B1B1;
+  margin: auto;
+  margin-top: 35px;
+}
+
+@media (max-width:576px){
+  .booking-appointment .card-info form .btn-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .booking-appointment .card-info form .back-btn{
+    width: 71px;
+    height: 44px;
+    border: none;
+    outline: none;
+    font-family: var(--pp-font-main);
+    font-size: 16px;
+    color: var(--pp-main);
+
+    background: #FFFFFF;
+    border: 1px solid #F33071;
+    box-shadow: 0px 1px 4px #4EEBF5;
+  }
+  .booking-appointment .card-info form .payment-btn{
+    width: 147.74px;
+    height: 44px;
+    font-size: 16px;
+    margin-top: 0;
+    margin: unset;  }
+}
+
+.booking-appointment .booking-pagination{
+  margin-top: 45px;
+  margin-bottom: 50px;
+  margin-left: 8%;
+  margin-right: unset;
+}
+
+.booking-appointment .app-col{
+  width: 90%;
+ margin: auto;
+}
+
+@media (max-width:1024px){
+  .booking-appointment .app-col{
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.booking-appointment .separator{
+  width: 100%;
+  height: 1px;
+  background-color: #b1b1b1;
 }
 /*--------------------------------------------------------------
 # Back to top button
