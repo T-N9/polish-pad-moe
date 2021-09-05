@@ -2250,6 +2250,61 @@ text-shadow: 4px 4px 20px #FF0055;
   height: 1px;
   background-color: #b1b1b1;
 }
+
+.booking-complete{
+  width: 340px;
+  height: 318px;
+  text-align: center;
+  margin: auto;
+  padding: 30px 0px;
+
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-shadow: 0px 4px 4px #C4C4C4;
+}
+
+@media (max-width:576px) {
+  .booking-complete{
+    width: 308px;
+    height: auto;
+}
+
+.booking-complete h1{
+  font-size: 20px;
+  font-weight: 400;
+  
+}
+
+.booking-complete p{
+  font-family: var(--pp-font-assistant) !important;
+  font-size: 14px;
+  color:black;
+  margin-bottom: 0;
+}
+
+.booking-complete .b-text{
+  font-weight: 700;
+  
+}
+
+.booking-complete .ques{
+  font-weight: 600;
+  
+}
+
+.booking-complete .bth-btn{
+  font-weight: 400;
+  width: 120px;
+  height: 44px;
+  left: 658px;
+  top: 405px;
+  font-size: 16px;
+  color: var(--pp-main);
+  background: #FFFFFF;
+  border: 1px solid #F33071;
+  box-shadow: 4px 5px 1px #4EEBF5;
+  margin-top: 20px;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
