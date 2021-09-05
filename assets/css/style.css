@@ -1717,6 +1717,7 @@ text-shadow: 4px 4px 20px #FF0055;
   padding: 27px 25px;
   margin: auto;
   margin-top: 100px;
+  margin-bottom: 175px;
   
 }
 
@@ -1726,6 +1727,7 @@ text-shadow: 4px 4px 20px #FF0055;
     width: 308px;
     height: 120px;
     padding: 27px 20px;
+    margin-bottom: unset;
   }
 }
 
@@ -1753,7 +1755,6 @@ text-shadow: 4px 4px 20px #FF0055;
 .booking-pagination{
   width: 65%;
   margin: auto;
-  margin-top: 177px;
   justify-content: space-between;
 }
 
@@ -1792,6 +1793,190 @@ text-shadow: 4px 4px 20px #FF0055;
 
 .booking-pagination .active-btn{
   color: #F33071;
+}
+
+/* 2 */
+
+.booking-schedule-picker{
+  width: 60%;
+  margin: auto;
+  padding-left: 100px;
+  margin-top: 100px;
+  margin-bottom: 125px;
+}
+
+@media (max-width:768px){
+  .booking-schedule-picker{
+    width: 100%;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width:576px){
+  .booking-schedule-picker{
+    margin-bottom: unset;
+    margin-top: 10px;
+    padding-left: 25px;
+  }
+}
+
+.booking-schedule-picker h1{
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 576px){
+  .booking-schedule-picker h1{
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+.booking-schedule-picker .separator{
+  width: 90%;
+  height: 1px;
+  background-color: #B1B1B1;
+}
+
+@media (max-width: 576px){
+  .booking-schedule-picker .separator{
+    margin-bottom: 28px;
+  }
+}
+
+.booking-schedule-picker{
+  font-family: var(--pp-font-assistant) !important;
+  font-weight: 600;
+
+}
+
+.booking-schedule-picker .day{
+  width: 96.85px;
+  height: 36.14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+
+  border: 2.5px solid rgba(100, 97, 97, 0.38);
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+@media (max-width:576px) {
+  .booking-schedule-picker .day{
+    width: 75.02px;
+    height: 28px;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+}
+
+.booking-schedule-picker .day-control{
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.booking-schedule-picker .day-control .control-btn{
+  width: 46.98px;
+  height: 36.14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  background: white;
+  border: 2.5px solid rgba(100, 97, 97, 0.38);
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+@media (max-width:576px) {
+  .booking-schedule-picker .day-control .control-btn{
+    width: 38px;
+    height: 28px;
+  }
+  .booking-schedule-picker .day-control .control-btn img{
+    width: 8px;
+    height: 12px;
+  }
+}
+
+.booking-schedule-picker .day-control .control-btn:active{
+  background-color: #F2F2F2;
+}
+
+.booking-schedule-picker .day-control .control-btn:hover{
+  background-color: #F2F2F2;
+}
+
+.booking-schedule-picker .day-picker {
+  margin-top: 27px;
+}
+
+.booking-schedule-picker .day-picker .dayitem{
+  width: 96.85px;
+  height: 36.14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.9;
+  color: black;
+  cursor: pointer;
+
+  border: 2px solid rgba(100, 97, 97, 0.38);
+}
+
+@media (max-width:576px) {
+  .booking-schedule-picker .day-picker {
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+  .booking-schedule-picker .day-picker .dayitem{
+    width: 72.29px;
+    height: 36.14px;
+  }
+}
+
+.booking-schedule-picker .day-picker .day-active{
+  background-color: rgba(78, 235, 245, 0.4);
+}
+
+.booking-schedule-picker .time-picker .timeitem{
+  width: 96.85px;
+  height: 36.14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.9;
+  color: black;
+  cursor: pointer;
+  margin-right: 5px;
+
+  border: 2px solid rgba(100, 97, 97, 0.38);
+}
+
+@media (max-width:576px) {
+  .booking-schedule-picker .time-picker {
+    padding-left: 10px;
+  
+  }
+  
+  .booking-schedule-picker .time-picker .timeitem{
+    width: 93.24px;
+    height: 36.14px;
+    margin-bottom: 10px;
+  }
+}
+
+.booking-schedule-picker .time-picker .time-active{
+  background-color: rgba(78, 235, 245, 0.4);
 }
 /*--------------------------------------------------------------
 # Back to top button

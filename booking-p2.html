@@ -71,6 +71,117 @@
             <h1 class="month">
                 September
             </h1>
+            <div class="separator d-block d-md-none"></div>
+            <div class="d-flex">
+                <span class="day">
+                    Today
+                </span>
+                <div class="day-control d-flex">
+                    <span class="control-btn">
+                        <img src="assets/img/left.svg" alt="left arrow">
+                    </span>
+                    <span class="control-btn">
+                        <img src="assets/img/right.svg" alt="right arrow">
+                    </span>
+                </div>
+
+                
+            </div>
+            <ul class="day-picker list-unstyled d-flex">
+                <li id="d1" onclick="daySelector(event, 'd1')" class="dayitem">
+                    <span>
+                        30
+                    </span>
+                    <span>
+                        Mon
+                    </span>
+                    
+                </li>
+                <li id="d2" onclick="daySelector(event, 'd2')" class="dayitem">
+                    <span>
+                        31
+                    </span>
+                    <span>
+                        Tue
+                    </span>
+                    
+                </li>
+                <li id="d3" onclick="daySelector(event, 'd3')" class="dayitem">
+                    <span>
+                        1
+                    </span>
+                    <span>
+                        Wed
+                    </span>
+                    
+                </li>
+                <li id="d4" onclick="daySelector(event, 'd4')" class="dayitem">
+                    <span>
+                        2
+                    </span>
+                    <span>
+                        Thu
+                    </span>
+                    
+                </li>
+                <li id="d5" onclick="daySelector(event, 'd5')" class="dayitem d-none d-md-flex">
+                    <span>
+                        3
+                    </span>
+                    <span>
+                        Fri
+                    </span>
+                    
+                </li>
+                <li id="d6" onclick="daySelector(event, 'd6')" class="dayitem d-none d-md-flex">
+                    <span>
+                        4
+                    </span>
+                    <span>
+                        Sat
+                    </span>
+                    
+                </li>
+                <li id="d7" onclick="daySelector(event, 'd7')" class="dayitem d-none d-md-flex">
+                    <span>
+                        5
+                    </span>
+                    <span>
+                        Sun
+                    </span>
+                    
+                </li>
+                
+            </ul>
+
+            <ul class="time-picker list-unstyled d-flex flex-wrap">
+                <li id="t1" onclick="timeSelector(event, 't1')" class="timeitem">
+                    <span>
+                        10:30
+                    </span>
+                </li>
+                <li id="t2" onclick="timeSelector(event, 't2')" class="timeitem">
+                    <span>
+                        11:30
+                    </span>
+                </li>
+                <li id="t3" onclick="timeSelector(event, 't3')" class="timeitem">
+                    <span>
+                        12:30
+                    </span>
+                </li>
+                <li id="t4" onclick="timeSelector(event, 't4')" class="timeitem">
+                    <span>
+                        12:30
+                    </span>
+                </li>
+                <li id="t4" onclick="timeSelector(event, 't4')" class="timeitem">
+                    <span>
+                        12:30
+                    </span>
+                </li>
+                
+            </ul>
         </section>
 
         <section class="booking-pagination d-flex">
@@ -90,6 +201,24 @@
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        function daySelector(e, dayid){
+            var dayitem = document.getElementsByClassName("dayitem");
+            for (i = 0; i < dayitem.length; i++) {
+                dayitem[i].className = dayitem[i].className.replace(" day-active", "");
+            }
+            e.currentTarget.className += " day-active";
+        }
+
+        function timeSelector(e, timeid){
+            var timeitem = document.getElementsByClassName("timeitem");
+            for (i = 0; i < timeitem.length; i++) {
+                timeitem[i].className = timeitem[i].className.replace(" time-active", "");
+            }
+            e.currentTarget.className += " time-active";
+        }
+    </script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 </body>
