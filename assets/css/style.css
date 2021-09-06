@@ -2594,6 +2594,12 @@ margin-top: 40px;
   }
 }
 
+@media (max-width:768px){
+  .cus-login-media{
+    padding: 0px 0 15px 0;
+  }
+}
+
 .cus-signup-content{
   height: 130vh;
   padding: 0;
@@ -2779,6 +2785,12 @@ margin-top: 40px;
     width: 125px;
     height: 39px;
     margin: auto;
+  }
+}
+
+@media (max-width:768px){
+  .cus-signup-media{
+    padding: 0px 0 15px 0;
   }
 }
 
