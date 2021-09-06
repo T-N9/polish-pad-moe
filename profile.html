@@ -65,7 +65,7 @@
 
     <main style="margin-top: 100px;" class="pf-page-bg">
         <section class="pf-landing container-fluid">
-            <div class="row justify-content-center">
+            <div class="row landing-row justify-content-center">
                 <div class="first-col col-12 col-md-12 col-lg-4">
                     <div class="pf-information">
                         <div class="pf-img">
@@ -77,7 +77,7 @@
                                 FX Nail Studio, 5th Flooor, Suite 384, 93 Hope Street, G2 6LD
                             </p>
                         </div>
-                        <div class="separator"></div>
+                        <div class="separator d-none d-md-block"></div>
                         <div class="pf-review">
                             <div class="rating">
                                 <span class="fa fa-star checked"></span>
@@ -86,7 +86,7 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
                             </div>
-                            <p class="text-center">( 3 reviews )</p>
+                            <p style="font-size: 12px; font-weight: 700;" class="text-center d-none d-md-block">( 3 reviews )</p>
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="pf-schedule col-12 col-md-6 col-lg-6">
+                        <div class="pf-schedule col-12 col-md-6 col-lg-6 d-none d-md-block">
                             <p class="schedule-heading">Opening Hours:</p>
                             <div class="d-flex flex-row justify-content-between">
                                 <div class="days">
@@ -166,7 +166,7 @@
                 </div>
             </div>
         </section>
-        <section class="pf-about container-fluid">
+        <section class="pf-about sm-about container-fluid">
             <h1>About LVNDR Nails</h1>
             <p>
                 Welcome to LVNDR Nails! I'm Hannah; lead nail tech & owner of LVNDR Nails based in the heart of Glasgow
@@ -181,6 +181,39 @@
                 each booking. Please make yourself aware of this before booking in, it can be found on my instagram
                 highlights entitled "POLICIES".
             </p>
+            <div class="separator d-block d-md-none"></div>
+            <div class="pf-schedule toggleItem sm-schedule d-block d-md-none">
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="schedule-heading">Opening Hours:</p>
+                    <div onclick="scheduleShow()"><img src="assets/img/y-toggle-arr.svg" alt="dropdown"></div>
+                </div>
+
+                <div class="schedule-wrapper scale-off">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="days">
+                            <p>Monday:</p>
+                            <p>Tuesday:</p>
+                            <p>Wednesday:</p>
+                            <p>Thursday:</p>
+                            <p>Friday:</p>
+                            <p>Saturday:</p>
+                            <p>Sunday</p>
+                        </div>
+                        <div class="status-hour">
+                            <p>Closed-Closed</p>
+                            <p>10:30 - 17:00</p>
+                            <p>Closed-Closed</p>
+                            <p>10:30 - 17:00</p>
+                            <p>Closed-Closed</p>
+                            <p>12:30 - 19:30</p>
+                            <p>Closed-Closed</p>
+                        </div>
+                    </div>
+                    <button class="schedule-booking text-uppercase">
+                        Book Now
+                    </button>
+                </div>
+            </div>
         </section>
         <section class="pf-service container-fluid">
             <h1>Services</h1>
@@ -494,6 +527,19 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <script>
+        function scheduleShow(){
+            var about, info_wrapper;
+            info_wrapper=document.querySelector('.schedule-wrapper');
+            about=document.querySelector('.pf-about');
+            
+            info_wrapper.classList.toggle('scale-off');
+            info_wrapper.classList.toggle('scale-on');
+            about.classList.toggle('sm-about');
+
+
+
+        }
+
         function tab_toggler(evt, tabName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
