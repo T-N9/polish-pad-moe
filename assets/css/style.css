@@ -530,6 +530,7 @@
     display: block;
     width: 283px;
     margin: auto;
+    margin-top: 40px;
 }
 
 .login-content .login-section .form-wrapper .login-form input{
@@ -781,6 +782,7 @@ font-weight: 400;
   display: block;
   width: 283px;
   margin: auto;
+  margin-top: 40px;
 }
 
 .signup-content .signup-section .form-wrapper .signup-form input{
