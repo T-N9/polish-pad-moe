@@ -1427,7 +1427,7 @@ text-shadow: 4px 4px 20px #FF0055;
 @media (max-width:576px){
   .pf-service .service-cate{
     border-right: none;
-    /* border-bottom: 1px solid #F33071; */
+    padding-right: 20px;
   }
   .pf-service .line{
     width: 90%;
@@ -1513,6 +1513,7 @@ text-shadow: 4px 4px 20px #FF0055;
   font-size: 18px;
   font-weight: 400;
   box-shadow: 0 4px 10px #F33071;
+  margin-right: 20px;
 }
 
 .pf-cus-review{
@@ -2080,6 +2081,12 @@ text-shadow: 4px 4px 20px #FF0055;
   margin-top: 75px;
 }
 
+.booking-appointment .booking-pagination{
+  margin-left: unset !important;
+  margin-right: unset !important;
+  padding-left: 15px !important;
+}
+
 @media (max-width:576px){
   .booking-appointment{
     margin-top: 0;
@@ -2202,7 +2209,8 @@ text-shadow: 4px 4px 20px #FF0055;
   border: 0;
   border-radius: 0 !important;
   -webkit-appearance: none !important;
-  border-bottom: 1px solid #b1b1b1;
+  padding: 10px !important;
+  border: 1px solid #b1b1b1 !important;
   width: 100%;
   outline: none;
   margin-bottom: 25px;
@@ -2227,6 +2235,7 @@ text-shadow: 4px 4px 20px #FF0055;
   padding-left: 25px;
   padding-right: 25px;
   margin-left: 3px;
+  padding-bottom: 20px;
 }
 
 @media (max-width:576px){
@@ -2323,10 +2332,11 @@ text-shadow: 4px 4px 20px #FF0055;
   margin-bottom: 50px;
   margin-left: 7.5%;
   margin-right: unset;
+  bottom: unset !important;
 }
 
 .booking-appointment .app-col{
-  width: 90%;
+  max-width: 1214px;
  margin: auto;
 }
 
@@ -2608,7 +2618,7 @@ margin-top: 40px;
 
 @media (min-height:739px) and (min-width:1000px){
   .cus-signup-content{
-    height: 100vh;
+    height: 130vh;
     padding: 0;
   }
 }
@@ -2763,7 +2773,7 @@ margin-top: 40px;
   background-image: url(../img/customer-signup.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 @media (max-width:1024px){
