@@ -1468,10 +1468,10 @@ text-shadow: 4px 4px 20px #FF0055;
 @media (max-width:576px){
   .pf-service .service-cate{
     border-right: none;
-    padding-right: 20px;
+    padding-right: 12px;
   }
   .pf-service .line{
-    width: 90%;
+    width: 95%;
     height: 1px;
     background-color: #F33071;
     margin: auto;
@@ -1554,7 +1554,7 @@ text-shadow: 4px 4px 20px #FF0055;
   font-size: 18px;
   font-weight: 400;
   box-shadow: 0 4px 10px #F33071;
-  margin-right: 20px;
+  margin-right: 12px;
 }
 
 .pf-cus-review{
@@ -1593,6 +1593,7 @@ text-shadow: 4px 4px 20px #FF0055;
   .pf-cus-review .pf-review-left{
     width: 345px;
     padding-left: 35px;
+    padding-bottom: 30px;
   }
 }
 
@@ -1626,6 +1627,12 @@ text-shadow: 4px 4px 20px #FF0055;
   display: inline-block;
   color: #c4c4c4;
   letter-spacing: -1px;
+}
+
+@media (max-width:576px) {
+  .pf-cus-review .rating{
+    font-size: 1.165rem;
+  }
 }
 
 .pf-cus-review p{
@@ -1689,6 +1696,12 @@ text-shadow: 4px 4px 20px #FF0055;
   font-size: 16px;
   background: #FFFFFF;
   border: 1px solid #4EEBF5;
+}
+
+@media (max-width:576px) {
+  .pf-cus-review .pf-review-left .filter-wrapper .review-btn{
+    margin-left: unset;
+  }
 }
 
 .pf-cus-review .pf-review-right{
