@@ -41,6 +41,12 @@
 }
 
 @media (min-width:1366px) {
+  .signup-content .signup-section .form-wrapper {
+    margin-top: -50px;
+  }
+}
+
+@media (min-width:1366px) {
   .signup-content .signup-section {
     margin: auto;
     padding-top: 130px;
@@ -48,10 +54,29 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .signup-content {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1366px) {
+  .signup-content {
+    height: 110vh;
+  }
+}
+
+@media (min-width: 1440px) {
+  .signup-content {
+    height: 100vh;
+  }
+}
+
 @media (min-width:1500px) {
   .signup-content {
     width: 100%;
     max-width: unset;
+    height: 100vh;
   }
 }
 
@@ -63,50 +88,30 @@
 
 @media (min-width:1366px) {
   .signup-content .signup-section .form-wrapper h1 {
-    font-size: 48px;
+    font-size: 28px;
   }
 }
 
-.signup-content .signup-section .form-wrapper .reglog-google {
-  display: block;
-  width: 283px;
-  height: 38px;
-  margin: auto;
-  padding: 10px 30px;
-  border: 1px solid #b1b1b1;
-  box-shadow: 0px 4px 4px #00000025;
-  margin-top: 18px;
-  margin-bottom: 50px;
-}
 
-.signup-content .signup-section .form-wrapper .reglog-google img {
-  width: 18px;
-  height: 18px;
-}
-
-.signup-content .signup-section .form-wrapper .reglog-google p {
-  font-family: var(--pp-font-assistant);
-  font-weight: 700;
-  color: #64616172;
-  margin-bottom: 0 !important;
-  margin-left: 45px;
-}
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--pp-main);
   opacity: 1;
+  font-weight: 400;
   /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: var(--pp-main);
+  font-weight: 400;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: var(--pp-main);
+  font-weight: 400;
 }
 
 /* @media (min-width: 1440px){
@@ -114,18 +119,6 @@
       width: 1366px;
     }
   } */
-
-@media (min-width: 1366px) {
-  .signup-content {
-    height: 100vh;
-  }
-}
-
-@media (min-width: 1024px) {
-  .signup-content {
-    height: 100vh;
-  }
-}
 
 .signup-content .signup-section .form-wrapper .signup-form {
   display: block;
@@ -155,10 +148,11 @@
   font-size: 16px;
   border-bottom: 1px solid #b1b1b1;
   border-radius: 0 !important;
-  color: #646161;
+  color: #646161 !important;
   margin-bottom: 12px;
   font-family: var(--pp-font-assistant);
   -webkit-appearance: none !important;
+  font-weight: 600;
 }
 
 input:-webkit-autofill,
@@ -176,9 +170,9 @@ input:-webkit-autofill {
   position: absolute;
   width: 189px;
   height: 83px;
-  top: 12px;
-  right: 0px;
-  transform: scale(0.7);
+  top: -5px;
+  left: -20px;
+  transform: scale(0.5);
 }
 
 .reglog-btn {
@@ -257,6 +251,14 @@ input:-webkit-autofill {
 @media (min-width:1500px) {
   .signup-content .signup-media {
     width: 55%;
+    padding-top: 225px;
+  }
+}
+
+@media (max-width:1024px) {
+  .signup-content .signup-media {
+    padding-top: 0;
+    padding-bottom: 15px;
   }
 }
 

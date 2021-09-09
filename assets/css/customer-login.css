@@ -40,14 +40,14 @@ Customer- Log in page
   position: absolute;
   width: 189px;
   height: 83px;
-  top: 12px;
-  left: 0px;
-  transform: scale(0.7);
+  top: -5px;
+  left: -20px;
+  transform: scale(0.5);
 }
 
 .cus-login-wrapper .form-wrapper {
   text-align: center;
-  padding-top: 125px;
+  /* padding-top: 125px; */
 }
 
 @media (min-height:739px) and (min-width:1000px) {
@@ -71,7 +71,7 @@ Customer- Log in page
 }
 
 .cus-login-wrapper .form-wrapper h1 {
-  font-size: 48px;
+  font-size: 28px;
   font-weight: 400;
 }
 
@@ -82,7 +82,7 @@ Customer- Log in page
 }
 
 .cus-login-wrapper .form-wrapper h2 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -101,7 +101,8 @@ Customer- Log in page
   border: 1px solid #b1b1b1;
   box-shadow: 0px 4px 4px #00000025;
   margin-top: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .cus-login-content .form-wrapper .reglog-google img {
@@ -137,23 +138,27 @@ Customer- Log in page
   margin-bottom: 12px;
   font-family: var(--pp-font-assistant);
   -webkit-appearance: none !important;
+  font-weight: 600;
 }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--pp-main);
   opacity: 1;
+  font-weight: 400;
   /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: var(--pp-main);
+  font-weight: 400;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: var(--pp-main);
+  font-weight: 400;
 }
 
 input:-webkit-autofill,

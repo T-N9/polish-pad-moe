@@ -71,50 +71,28 @@
 
 @media (min-width:1366px) {
   .login-content .login-section .form-wrapper h1 {
-    font-size: 48px;
+    font-size: 28px;
   }
-}
-
-.login-content .login-section .form-wrapper .reglog-google {
-  display: block;
-  width: 283px;
-  height: 38px;
-  margin: auto;
-  padding: 10px 30px;
-  border: 1px solid #b1b1b1;
-  box-shadow: 0px 4px 4px #00000025;
-  margin-top: 18px;
-  margin-bottom: 50px;
-}
-
-.login-content .login-section .form-wrapper .reglog-google img {
-  width: 18px;
-  height: 18px;
-}
-
-.login-content .login-section .form-wrapper .reglog-google p {
-  font-family: var(--pp-font-assistant);
-  font-weight: 700;
-  color: #64616172;
-  margin-bottom: 0 !important;
-  margin-left: 45px;
 }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--pp-main);
   opacity: 1;
+  font-weight: 400;
   /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: var(--pp-main);
+  font-weight: 400;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: var(--pp-main);
+  font-weight: 400;
 }
 
 /* @media (min-width: 1440px){
@@ -165,6 +143,7 @@
   margin-bottom: 12px;
   font-family: var(--pp-font-assistant);
   -webkit-appearance: none !important;
+  font-weight: 600;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -191,9 +170,9 @@ input:-webkit-autofill {
   position: absolute;
   width: 189px;
   height: 83px;
-  top: 12px;
-  left: 0px;
-  transform: scale(0.7);
+  top: -5px;
+  left: -20px;
+  transform: scale(0.5);
 }
 
 .reglog-btn {
