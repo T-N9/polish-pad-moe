@@ -42,43 +42,48 @@
     <main class="overflow-x-hidden">
         <section class="signup-content container-fluid d-flex flex-column-reverse flex-lg-row-reverse justify-content-between">
             <div class="signup-section">
+                <img class="pp-logo d-none d-lg-block" src="assets/img/logo.png" alt="PolishPad logo">
                 <div class="form-wrapper">
                     <h1 class="text-uppercase">Sign Up</h1>
-                    <!-- <div class="reglog-google d-flex align-items-center">
-                        <img src="assets/img/Google__G__Logo 1.png" alt="signup google">
-                        <p>Sign Up with Google</p>
-                    </div> -->
 
                     <form class="signup-form" action="">
                         <div class="input-wrapper mx-auto">
-                            <input class="text-gray" type="text" id="name" name="name" placeholder="Name">
-                            <input class="text-gray" type="text" id="surname" name="surname" placeholder="Surname">
-                            <input class="text-gray mb-4" type="email" id="email" name="email" placeholder="Email Address">
+                            <input class="text-gray pp-input" type="text" id="name" name="name" placeholder="Name">
+                            <input class="text-gray pp-input" type="text" id="surname" name="surname" placeholder="Surname">
+                            <input class="text-gray pp-input mb-4" type="email" id="email" name="email" placeholder="Email Address">
         
-                            <input type="text" id="business-name" name="business-name" placeholder="Business Name">
-                            <input type="text" id="Address" name="Address" placeholder="Address">
+                            <input class="pp-input" type="text" id="business-name" name="business-name" placeholder="Business Name">
+                            <input class="pp-input" type="text" id="Address" name="Address" placeholder="Address">
                             <div class="d-flex justify-content-between">
-                                <input  type="number" id="mobile-number" name="mobile-number" placeholder="Mobile">
-                                <input  type="number" id="postcode" name="postcode" placeholder="Postcode">
+                                <input  class="pp-input" type="number" id="mobile-number" name="mobile-number" placeholder="Mobile">
+                                <input  class="pp-input" type="number" id="postcode" name="postcode" placeholder="Postcode">
                             </div>
         
                             <div class="mobile-tech d-flex justify-content-evenly align-content-center">
-                                <div class="toggle">
-        
+                                <div onclick="formToggle()" class="toggle">
+                                    <div class="circle"></div>
                                 </div>
                                 <p>
-                                    Are you a mobile nail tech?
+                                    Are you a mobile nail technician?
                                 </p>
                             </div>
-                            <input type="password" id="password" name="password" placeholder="Create a Password">
-                            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm a Password">
+                            <input class="pp-input" type="password" id="password" name="password" placeholder="Create a Password">
+                            <input class="pp-input" type="password" id="confirm-password" name="confirm-password" placeholder="Confirm a Password">
         
-                            <div class="d-flex signup-agreement">
-                                <input type="radio" id="termspolicy" name="terms&policy">
-                                <label for="terms&policy">
-                                    I agree to the <a href="#">Terms and Conditions</a>.
+                            
+                            <div class="form-group form-check signup-agreement">
+                                <input type="checkbox" class="form-check-input" id="agreement">
+                                <label class="form-check-label" for="agreement">
+                                    I agree to the <a href="#">Terms and Conditions</a> & <a href="#">Privacy Policy</a>.
                                 </label>
                             </div>
+                            <div class="form-group form-check signup-agreement">
+                                <input type="checkbox" class="form-check-input" id="agreement">
+                                <label class="form-check-label" for="agreement">
+                                    Yes, I want to sign up for a newsletter.
+                                </label>
+                            </div>
+                            
                         </div>
         
                         <button class="reglog-btn text-uppercase">
@@ -93,22 +98,31 @@
                 <div class="media-wrapper">
                     <h1 class="lg-heading d-none d-lg-block text-center">Ready</h1>
                     <h1 class="lg-title d-none d-lg-block text-center">To Level Up?</h1>
-                    <img class="logo-img mt-4" src="assets/img/POLISH PAD. logo white.png" alt="polishpad logo">
+                    <img class="logo-img mt-4 d-block d-lg-none" src="assets/img/POLISH PAD. logo white.png" alt="pp-logo white">
                     <!-- <h1 class="md-title d-block d-lg-none">Level Up!</h1> -->
                     <img class="reglog-img d-none d-lg-block" src="assets/img/pp-reglog-img.png" alt="reglog img">
                 </div>
             </div>
         </section>
     </main>
-    <div id="preloader"></div> 
-    
-    <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="fa fa-arrow-up"></i></a> -->
+
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
     <!-- Template Main JS File -->
+    <script>
+        var formToggler=document.querySelector('.circle');
+        var togglePath=document.querySelector('.toggle');
+
+        function formToggle(){
+            formToggler.classList.toggle('active-toggle');
+            togglePath.classList.toggle('active-path');
+        }
+        
+    </script>
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
