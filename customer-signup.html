@@ -53,25 +53,26 @@
                     </div>
 
                     <form class="signup-form" action="">
-                        <input class="mb-3" type="text" id="name" name="name" placeholder="Name">
-                        <input class="mb-3" type="text" id="surname" name="surname" placeholder="Surname">
-                        <input class="mb-3" type="email" id="email" name="email" placeholder="Email Address">
-                        <input class="mb-3" type="number" id="ph-number" name="ph-number" placeholder="Mobile Number">
-                        <input class="mb-3" type="password" id="password" name="password" placeholder="Create a Password">
-                        <input class="mb-3" type="password" id="con-password" name="con-password" placeholder="Confirm a Password">
+                        <input class="mb-3 pp-input" type="text" id="name" name="name" placeholder="Name">
+                        <input class="mb-3 pp-input" type="text" id="surname" name="surname" placeholder="Surname">
+                        <input class="mb-3 pp-input" type="email" id="email" name="email" placeholder="Email Address">
+                        <input class="mb-3 pp-input" type="number" id="ph-number" name="ph-number" placeholder="Mobile Number">
+                        <input class="mb-3 pp-input" type="password" id="password" name="password" placeholder="Create a Password">
+                        <input class="mb-3 pp-input" type="password" id="con-password" name="con-password" placeholder="Confirm a Password">
 
-                        <div class="d-flex signup-agreement mt-3">
-                            <input type="radio" id="signup-check" name="newsletters">
-                            <label for="newsletters" class="text-start">
+                        <div class="form-group form-check signup-agreement">
+                            <input type="checkbox" class="form-check-input" id="newsletter">
+                            <label style="width: 105%;" class="form-check-label text-start" for="newsletter">
                                 Yes, I want to receive Polish Pad newsletters.
                             </label>
                         </div>
-                        <div style="width:115%;" class="d-flex signup-agreement justify-content-between mb-3">
-                            <input type="radio" id="signup-check" name="terms&policy">
-                            <label for="terms&policy" class="text-start">
-                                I agree to the <a href="#">Terms and Conditions</a> & <a href="">Privacy Policy</a>.
+                        <div class="form-group form-check signup-agreement">
+                            <input type="checkbox" class="form-check-input" id="termcondition">
+                            <label class="form-check-label text-start" for="termcondition">
+                                I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.
                             </label>
                         </div>
+                        
                         <button class="reglog-btn text-uppercase">
                             Submit
                         </button>
