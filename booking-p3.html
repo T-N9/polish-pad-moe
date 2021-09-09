@@ -73,20 +73,24 @@
                     <div class="appointment-info card-style">
                         <h1>Appointment Details</h1>
                         <div class="separator d-block d-md-none mb-4"></div>
-                        <p>
+                        <p class="text-center">
+                            <span class="b-text">LNDR Nails </span>(Hannah) <br>
+                        <p class="text-center mt-4">
                             <span class="ques">Date & Time : </span><span class="ans">Sep 2, 2021, 18:30 - 18:45</span>
-                            <p class="h-text d-none d-md-block">with</p>
-                            <span class="ques">Chosen Tech : </span><span class="ans">Hannah</span>
-                            <p class="h-text mt-4">Chosen Treatment : </p>
-                            <span class="ques">Acrylic Nail Repair : </span><span class="ans"> £2.50</span> <br>
-                            <span class="ques">Duration : </span><span class="ans"> £2.50</span>
+                            <br>
+                            <span class="ques"> Service: </span><span class="ans"> Acrylic Nail Repair</span> <br>
+                            <span class="ques">Duration : </span><span class="ans"> 15 min</span>
+                        </p>
                         </p>
                     </div>
                     <div class="separator d-block d-md-none"></div>
                     <div class="appointment-info fee-info card-style mt-4">
-                        <div>
-                            <p class="mb-2"><span class="b-ques">Treatment Fee : </span><span class="ans"> £2.50</span></p>
-                            <p class="mb-2"><span class="b-ques">Booking Fee : </span><span class="ans"> £2.50</span></p>
+                        <h1 class="d-none d-md-block">Payment Summary</h1>
+                        <div class="text-start text-md-center">
+                            <p class="mb-2"><span class="b-ques">Treatment Fee : </span><span class="ans"> £2.50</span>
+                            </p>
+                            <p class="mb-2"><span class="b-ques">Booking Fee : </span><span class="ans"> £2.50</span>
+                            </p>
                             <p><span class="b-ques h-color">Total : </span><span class="ans"> £2.50</span></p>
                         </div>
                     </div>
@@ -102,9 +106,11 @@
                             <input type="number" name="ph-number" id="ph-number" placeholder="Phone Number">
 
                             <label for="ph-number">
-                                Pleasee inform us on any allergies or medical conditions which you feel would be relevant.
+                                Pleasee inform us on any allergies or medical conditions which you feel would be
+                                relevant.
                             </label>
-                            <textarea id="w3review" name="w3review" rows="4" cols="35" placeholder="Additional Notes..." ></textarea>
+                            <textarea id="w3review" name="w3review" rows="4" cols="35"
+                                placeholder="Additional Notes..."></textarea>
 
                             <label for="file-upload">
                                 Upload your nail inspiration for this appointment.
@@ -117,6 +123,12 @@
                     <div class="card-info card-style">
                         <h1>Card Details</h1>
                         <div class="separator d-block d-md-none mb-2"></div>
+                        <div class="payment d-flex justify-content-evenly mb-3">
+                            <img src="assets/img/Visa card. PolishPad.png" alt="visa pp">
+                            <img src="assets/img/Mastercard. PolishPad.png" alt="master card pp">
+                            <img src="assets/img/Discover Polish Pad.png" alt="discover pp">
+                            <img src="assets/img/AMX.png" alt="visa pp">
+                        </div>
                         <form action="">
                             <label for="card-number">
                                 Card Number
@@ -139,7 +151,10 @@
                                 <button class="payment-btn">
                                     Make a Payment
                                 </button>
+
+                                
                             </div>
+                            <img class="stripe" src="assets/img/stipe.png" alt="power by stripe">
                         </form>
                     </div>
                 </div>
@@ -149,10 +164,10 @@
                     </button>
                 </section>
             </div>
-            
-            
+
+
         </section>
-        
+
     </main>
 
     <div id="preloader"></div>

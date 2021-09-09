@@ -1505,6 +1505,9 @@
   padding: 38px 40px;
   /* margin: auto; */
 }
+.booking-appointment .card-style .b-text{
+  font-weight: 700;
+}
 
 @media (max-width:1024px){
   .booking-appointment .card-style{
@@ -1610,7 +1613,7 @@
   padding: 10px !important;
   border: 1px solid #b1b1b1 !important;
   width: 100%;
-  outline: none;
+  outline-color: var(--pp-main);
   margin-bottom: 25px;
 }
 
@@ -1639,6 +1642,7 @@ input[type=number] {
   /* color: var(--pp-main); */
   margin-bottom: 20px;
   padding: 10px;
+  outline-color: var(--pp-main);
 }
 
 .booking-appointment .extras-info{
@@ -1660,7 +1664,7 @@ input[type=number] {
 .booking-appointment .card-info{
   padding-left: 60px;
   padding-right: 60px;
-  /* margin-left: 15px; */
+  padding-bottom: 20px;
 }
 
 @media (max-width:576px){
@@ -1682,6 +1686,15 @@ input[type=number] {
   margin-bottom: 15px;
   border-radius: 0 !important;
   -webkit-appearance: none;
+  height: 46.17px;
+
+  outline-color: var(--pp-main);
+}
+
+.booking-appointment .card-info .stripe{
+  margin: auto;
+  display: block;
+  margin-top: 20px;
 }
 
 .booking-appointment .card-info form label{
@@ -1706,8 +1719,26 @@ input[type=number] {
   font-size: 20px;
   color: #B1B1B1;
   margin: auto;
-  margin-top: 35px;
+  /* margin-top: 35px; */
 }
+
+.extras-info ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--pp-main);
+  opacity: 1;
+  /* Firefox */
+}
+
+.extras-info :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--pp-main);
+}
+
+.extras-info ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--pp-main);
+}
+
 
 @media (max-width:576px){
   .booking-appointment .card-info form .btn-wrapper{
