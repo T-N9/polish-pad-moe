@@ -55,6 +55,12 @@
   }
 }
 
+@media (min-width:1500px) {
+  .login-content {
+    width: 100%;
+    max-width: unset;
+  }
+}
 
 
 .login-content .login-section .form-wrapper h1 {
@@ -145,8 +151,9 @@
   }
 }
 
-.login-content .login-section .form-wrapper .login-form input {
+.login-content .login-section .form-wrapper .login-form .pp-input {
   width: 100%;
+  height: 20px;
   padding: 0;
   outline: 0;
   border: 0;
@@ -154,10 +161,20 @@
   position: relative;
   border-bottom: 1px solid #b1b1b1;
   border-radius: 0 !important;
-  color: var(--pp-main);
+  color: #646161;
   margin-bottom: 12px;
   font-family: var(--pp-font-assistant);
   -webkit-appearance: none !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #646161 !important;
 }
 
 .login-content .login-section .form-wrapper .login-form input::after {
@@ -244,6 +261,12 @@
 @media (min-width:1366px) {
   .login-content .login-media {
     width: 777px;
+  }
+}
+
+@media (min-width:1500px) {
+  .login-content .login-media {
+    width: 55%;
   }
 }
 
