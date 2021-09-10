@@ -829,13 +829,23 @@
   font-weight: 600;
   transition: all 200ms ease-out;
   cursor: pointer;
-  padding: 2px 0;
+  /* padding: 2px 0; */
   margin-bottom: 5px;
   user-select: none;
 }
 
 .pf-service .tab-active{
   background-color: #F1F1F1;
+}
+
+.pf-service .tabcontent{
+  padding-right: 12px;
+}
+
+@media (max-width:576px) {
+  .pf-service .tabcontent{
+    padding-right: 8px;
+  }
 }
 
 /* .pf-service li:hover{
@@ -854,9 +864,73 @@
 .pf-service .service-choice li{
   display: flex;
   align-items: center;
-  padding-left: 28px;
-  padding-right: 35px;
+  /* padding-left: 28px; */
+  /* padding-right: 35px; */
   justify-content: space-between;
+  position: relative;
+}
+
+.pf-service .form-check-label{
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+.pf-service .form-check-input{
+  position: absolute;
+  left: 50px;
+  width: 1rem !important;
+  border: 1px solid rgba(90, 90, 90, 0.63) !important;
+  border-radius: 3px !important;
+  background-color: rgba(196, 196, 196, 0.19);
+  cursor: pointer;
+}
+
+@media (max-width:576px) {
+  .pf-service .form-check-input{
+    left: 35px;
+  }
+}
+.pf-service .form-check-input:checked + .form-check-label {
+  background-color: #F1F1F1;
+}
+
+.pf-service .service-des {
+  padding-right: 35px;
+  /* padding-top: 2px; */
+  /* padding-bottom: 2px; */
+}
+
+@media (max-width:576px) {
+  .pf-service .service-des {
+    padding-right: 10px;
+  }
+}
+
+.pf-service .service-name {
+  margin-left: 65px;
+}
+
+@media (max-width:576px) {
+  .pf-service .service-name {
+    margin-left: 50px;
+  }
+}
+
+.pf-service .form-check-input:checked {
+  background-color: var(--pp-main) !important;
+  border-color: var(--pp-main) !important;
+}
+
+.pf-service .service-choice .form-check{
+  padding: 0 !important;
+}
+
+.pf-service .service-choice .check-wrapper{
+  width: 100%;
+  padding: 0px 0;
+}
+
+.pf-service .service-choice .form-check-label{
+  width: 100%;
 }
 
 @media (max-width:576px){
@@ -866,7 +940,7 @@
   }
 }
 
-.pf-service .service-choice input{
+/* .pf-service .service-choice input{
   border: 1px solid rgba(90, 90, 90, 0.63) !important;
   width: 15.5px !important;
   height: 15px;
@@ -875,13 +949,13 @@
   background-color: rgba(196, 196, 196, 0.19);
   cursor: pointer;
   margin-right: 20px;
-}
+} */
 
-.pf-service .service-choice input:checked{
+/* .pf-service .service-choice input:checked{
   background-color: var(--pp-main);
   background-size: 80%;
   border: 1px solid var(--pp-secondary) ;
-}
+} */
 
 .pf-service .service-choice .service-btn{
   border: 0;
