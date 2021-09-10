@@ -1138,7 +1138,7 @@
   }
   .booking-heading  img{
     width: 85px;
-    height: 27px;
+    height: 33px;
   }
 }
 
@@ -1496,6 +1496,14 @@
   margin-left: auto;
 }
 
+@media (max-width:576px) {
+  .booking-appointment .appointment-info h1{
+    text-align: center !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+
 .booking-appointment .card-style{
   width: 378px;
   height: auto;
@@ -1646,6 +1654,7 @@ input[type=number] {
 }
 
 .booking-appointment .extras-info{
+  height: 100%;
   padding-left: 25px;
   padding-right: 25px;
   margin-left: 3px;
@@ -1662,6 +1671,7 @@ input[type=number] {
 }
 
 .booking-appointment .card-info{
+  width: 100%;
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 20px;
