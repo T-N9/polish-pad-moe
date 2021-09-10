@@ -227,7 +227,7 @@ input:-webkit-autofill {
 
 @media (min-height:739px) and (min-width:1000px) {
   .login-content .login-media {
-    padding-top: 180px;
+    padding-top: 130px;
   }
 }
 
@@ -243,9 +243,16 @@ input:-webkit-autofill {
   }
 }
 
+@media (min-width:1440px) {
+  .login-content .login-media {
+    padding-top: 168px;
+  }
+}
+
 @media (min-width:1500px) {
   .login-content .login-media {
     width: 55%;
+    padding-top: 200px;
   }
 }
 

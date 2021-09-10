@@ -185,7 +185,7 @@ input:-webkit-autofill {
   font-family: var(--pp-font-assistant);
   color: #646161;
   font-size: 12px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .cus-login-content .form-wrapper .cus-booking {
