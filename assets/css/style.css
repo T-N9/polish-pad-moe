@@ -1243,6 +1243,13 @@
   padding: 30px 50px;
 }
 
+@media (max-width:768px){
+
+  .booking-heading  {
+    padding-left: 25px;
+  }
+}
+
 @media (max-width:576px){
 
   .booking-heading  {
@@ -1268,6 +1275,12 @@
   background-color: #F33071;
 }
 
+@media (max-width:768px) {
+  .booking-steps{
+    margin-top: 13px;
+  }
+}
+
 .booking-steps p{
   font-family: var(--pp-font-assistant) !important;
   font-size: 14px;
@@ -1283,6 +1296,12 @@
   background-color: rgba(196, 196, 196, 0.57);
   margin-left: 17px;
   margin-right: 17px;
+}
+
+@media (max-width:768px) {
+  .booking-steps .step-line{
+    width: 50px;
+  }
 }
 
 .booking-tech-intro{
@@ -1591,6 +1610,12 @@
   margin-top: 75px;
 }
 
+@media (max-width:768px) {
+  .booking-appointment{
+    margin-top: 48px;
+  }
+}
+
 .booking-appointment .booking-pagination{
   margin-left: unset !important;
   margin-right: unset !important;
@@ -1607,6 +1632,8 @@
 .booking-appointment .appointment-info{
   margin-left: auto;
 }
+
+
 
 @media (max-width:576px) {
   .booking-appointment .appointment-info h1{
@@ -1674,6 +1701,25 @@
 .booking-appointment .card-style span{
   font-family: var(--pp-font-assistant) !important;
   color: black;
+}
+
+@media (max-width:768px) {
+  .booking-appointment .appointment-info {
+    width: 48%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width:576px) {
+  .booking-appointment .appointment-info {
+    width: unset;
+    margin-left: auto;
+  }
+
+  .booking-appointment .fee-info {
+    width: unset;
+    margin-top: unset;
+  }
 }
 
 .booking-appointment .card-style .ques{
@@ -1773,6 +1819,12 @@ input[type=number] {
   padding-bottom: 20px;
 }
 
+@media (max-width:768px){
+  .booking-appointment .extras-info{
+    margin-top: 26px;
+  }
+}
+
 @media (max-width:576px){
   .booking-appointment .extras-info{
     padding-left: 0;
@@ -1784,20 +1836,25 @@ input[type=number] {
 
 .booking-appointment .card-info{
   width: 100%;
+  height: 100%;
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 20px;
 }
 
+@media (max-width:768px){
+  .booking-appointment .card-info{
+    margin-top: 25px;
+    height: 100%;
+  }
+}
+
 @media (max-width:576px){
   .booking-appointment .card-info{
+    height: unset;
     padding-left: 0;
     padding-right: 0;
     margin-top: 25px;
-  }
-
-  .booking-appointment .fee-info{
-    margin-top: 5px !important;
   }
 }
 
@@ -1841,7 +1898,18 @@ input[type=number] {
   font-size: 20px;
   color: #B1B1B1;
   margin: auto;
-  /* margin-top: 35px; */
+}
+
+@media (max-width:1024px) {
+  .booking-appointment .card-info form .payment-btn{
+    margin-top: 35px;
+  }
+}
+
+@media (max-width:576px) {
+  .booking-appointment .card-info form .payment-btn{
+    margin-top: unset;
+  }
 }
 
 .extras-info ::placeholder {
@@ -1898,17 +1966,49 @@ input[type=number] {
   bottom: unset !important;
 }
 
-.booking-appointment .app-col{
+.booking-appointment .app-row{
   max-width: 1214px;
  margin: auto;
 }
 
 @media (max-width:1024px){
-  .booking-appointment .app-col{
+  .booking-appointment .app-row{
     width: 100%;
     margin: auto;
   }
 }
+
+@media (max-width:768px) {
+  .booking-appointment .app-pay-col{
+    width: 100vw;
+    display: flex;
+  }
+}
+
+@media (max-width:576px) {
+  .booking-appointment .app-pay-col{
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width:768px) {
+
+  .booking-appointment .fee-info {
+    width: 48%;
+    margin-top: 0 !important;
+    margin-left: auto;
+  }
+}
+
+@media (max-width:576px) {
+  .booking-appointment .fee-info{
+    margin-top: 5px !important;
+    margin-left: unset;
+    width: unset;
+  }
+}
+
 
 .booking-appointment .separator{
   width: 100%;
