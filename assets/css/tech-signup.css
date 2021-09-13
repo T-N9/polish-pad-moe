@@ -221,6 +221,12 @@ input:-webkit-autofill {
   background-color: rgba(243, 48, 113, 0.26);
   padding: 25px 0 30px 0;
   position: relative;
+}
+
+.signup-content .signup-media .media-wrapper h1{
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem !important;
+  line-height: 1.2 !important;
 
 }
 
