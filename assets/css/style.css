@@ -1902,7 +1902,7 @@ input[type=number] {
 
 @media (max-width:1024px) {
   .booking-appointment .card-info form .payment-btn{
-    margin-top: 35px;
+    margin-top: 20px;
   }
 }
 
