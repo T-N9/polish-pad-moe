@@ -46,6 +46,67 @@
     font-weight: 400;
     font-size: 28px;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     line-height: 1.2;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(1, 1, 1, 0.67);
+    opacity: 1;
+    font-weight: 400;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(1, 1, 1, 0.67);
+    font-weight: 400;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgba(1, 1, 1, 0.67);
+    font-weight: 400;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #646161 !important;
+}
+
+.reenter-pwd-wrapper input{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-radius: 0 !important;
+    -webkit-appearance: none !important;
+    font-family: var(--pp-font-assistant);
+    border-bottom: 1px solid rgba(177, 177, 177, 1);
+    font-weight: 600;
+    padding-left: 0;
+    padding-bottom: 0px;
+    line-height: 0.5;
+}
+.reenter-pwd-wrapper input:first-child{
+    margin-bottom: 20px;
+}
+
+.reenter-pwd-wrapper .confirm-btn{
+    width: 92px;
+    height: 44px;
+
+    background: #FFFFFF;
+    border: 1px solid #F33071;
+    box-shadow: 0px 2px 4px #4EEBF5;
+    color: var(--pp-main);
+    font-weight: 400;
+    margin-top: 35px;
+    font-size: 16px;
 }

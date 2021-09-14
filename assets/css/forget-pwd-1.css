@@ -92,7 +92,7 @@ input:-webkit-autofill {
     width: 100%;
     border: 1px solid #C4C4C4;
     outline: var(--pp-main);
-    border-radius: none;
+    border-radius: 0 !important;
     -webkit-appearance: none !important;
     font-family: var(--pp-font-assistant);
     font-weight: 600;
