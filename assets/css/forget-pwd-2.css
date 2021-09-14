@@ -1,0 +1,62 @@
+.forgotpwd-pg {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgetpwd-heading {
+    padding: 30px 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media (max-width:768px) {
+
+    .forgetpwd-heading {
+        padding-left: 25px;
+    }
+}
+
+@media (max-width:576px) {
+
+    .forgetpwd-heading {
+        padding: 20px 20px;
+    }
+
+    .forgetpwd-heading img {
+        width: 85px;
+        height: 33px;
+    }
+}
+
+.check-email-wrapper{
+    width: 389px;
+    height: auto;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-shadow: 0px 2px 7px #4EEBF5;
+    padding: 20px;
+    text-align: center;
+}
+
+.check-email-wrapper .check-email-icon{
+    margin: auto;
+    display: block;
+}
+
+.check-email-wrapper h1{
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.check-email-wrapper p{
+    font-family: var(--pp-font-assistant) !important;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+}

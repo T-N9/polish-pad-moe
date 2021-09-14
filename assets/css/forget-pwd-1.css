@@ -1,0 +1,115 @@
+.forgotpwd-pg {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgetpwd-heading {
+    padding: 30px 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media (max-width:768px) {
+
+    .forgetpwd-heading {
+        padding-left: 25px;
+    }
+}
+
+@media (max-width:576px) {
+
+    .forgetpwd-heading {
+        padding: 20px 20px;
+    }
+
+    .forgetpwd-heading img {
+        width: 85px;
+        height: 33px;
+    }
+}
+
+.forgetpwd-email-wrapper {
+    width: 389px;
+    height: auto;
+
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-shadow: 0px 2px 7px #4EEBF5;
+    padding: 40px 32px;
+}
+
+.forgetpwd-email-wrapper h1 {
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.forgetpwd-email-wrapper label {
+    font-family: var(--pp-font-assistant) !important;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(196, 196, 196, 1);
+    opacity: 1;
+    font-weight: 400;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(196, 196, 196, 1);
+    font-weight: 400;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgba(196, 196, 196, 1);
+    font-weight: 400;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #646161 !important;
+}
+
+.forgetpwd-email-wrapper input {
+    width: 100%;
+    border: 1px solid #C4C4C4;
+    outline: var(--pp-main);
+    border-radius: none;
+    -webkit-appearance: none !important;
+    font-family: var(--pp-font-assistant);
+    font-weight: 600;
+    padding: 15px;
+}
+
+.forgetpwd-email-wrapper .bth-btn {
+    display: block;
+    width: 120px;
+    height: 44px;
+    margin: auto;
+    margin-top: 25px;
+
+    background: #FFFFFF;
+    border: 1px solid #F33071;
+    color: var(--pp-main);
+    box-shadow: 0px 2px 4px #4EEBF5;
+    font-size: 16px;
+    outline: 0;
+}
