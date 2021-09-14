@@ -83,8 +83,8 @@
                         </p>
                         </p>
                     </div>
-                    <div class="separator d-block d-md-none"></div>
-                    <div class="appointment-info fee-info card-style mt-4">
+                    <!-- <div class="separator d-block d-md-none"></div> -->
+                    <div class="appointment-info fee-info card-style mt-4 d-none d-md-block">
                         <h1 class="d-none d-md-block">Payment Summary</h1>
                         <div class="text-start text-md-center">
                             <p class="mb-0 mb-md-2"><span class="b-ques">Treatment Fee : </span><span class="ans"> £2.50</span>
@@ -95,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4 p-sm-0">
                     <div class="extras-info card-style">
                         <h1>Extras</h1>
                         <div class="separator d-block d-md-none mb-2"></div>
@@ -118,16 +118,33 @@
                             <input type="file" id="file-upload" name="file-upload">
                         </form>
                     </div>
+
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card-info card-style">
+                <div class="col-12 d-block d-md-none fee-col">
+                    <div class="appointment-info fee-sm-info card-style mt-4 d-block d-md-none">
+                        <h1 class="">Payment Summary</h1>
+                        <div class="text-center">
+                            <p class="mb-0 mb-md-2"><span class="b-ques">Treatment Fee : </span><span class="ans"> £2.50</span>
+                            </p>
+                            <p class="mb-1 mb-md-2"><span class="b-ques">Booking Fee : </span><span class="ans"> £2.50</span>
+                            </p>
+                            <p><span class="b-ques h-color">Total : </span><span class="ans"> £2.50</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-sm-0">
+                    <div class="card-info card-style detail-card">
                         <h1>Card Details</h1>
                         <div class="separator d-block d-md-none mb-2"></div>
-                        <div class="payment d-flex justify-content-evenly mt-3 mt-md-0 mb-3">
-                            <img src="assets/img/Visa card. PolishPad.png" alt="visa pp">
-                            <img src="assets/img/Mastercard. PolishPad.png" alt="master card pp">
-                            <img src="assets/img/Discover Polish Pad.png" alt="discover pp">
-                            <img src="assets/img/AMX.png" alt="visa pp">
+                        <div class="payment d-flex justify-content-md-evenly justify-content-between mt-3 mt-md-0 mb-3">
+                            <div class="payment-type">
+                                <img src="assets/img/Visa card. PolishPad.png" alt="visa pp">
+                                <img src="assets/img/Mastercard. PolishPad.png" alt="master card pp">
+                                <img src="assets/img/Discover Polish Pad.png" alt="discover pp">
+                                <img src="assets/img/AMX.png" alt="visa pp">
+                            </div>
+
+                            <img class="stripe d-block d-md-none" src="assets/img/stipe.png" alt="power by stripe">
                         </div>
                         <form action="">
                             <label for="card-number">
@@ -154,7 +171,7 @@
 
                                 
                             </div>
-                            <img class="stripe" src="assets/img/stipe.png" alt="power by stripe">
+                            <img class="stripe d-none d-md-block" src="assets/img/stipe.png" alt="power by stripe">
                         </form>
                     </div>
                 </div>
