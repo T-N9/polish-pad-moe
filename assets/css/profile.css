@@ -117,7 +117,8 @@
   
   .pf-information .pf-review .rating{
     color: #c4c4c4;
-    font-size: 1.425rem;
+    /* font-size: 1.425rem; */
+    font-size: 1.325rem;
     text-align: center;
     margin-top: 12px;
     line-height: 1;
@@ -645,7 +646,7 @@
   }
   
   .pf-cus-review .rating{
-    font-size: 1.465rem;
+    font-size: 1.365rem;
     display: inline-block;
     color: #c4c4c4;
     letter-spacing: -1px;
@@ -718,7 +719,7 @@
     height: 33px;
     border: none;
     outline: none;
-    margin-left: auto;
+    /* margin-left: auto; */
     margin-right: 22px;
     font-family: var(--pp-font-assistant) !important;
     font-weight: 600;

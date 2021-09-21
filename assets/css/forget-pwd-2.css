@@ -2,7 +2,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 170px;
 }
 
 .forgetpwd-heading {
@@ -21,6 +21,9 @@
 }
 
 @media (max-width:576px) {
+    .forgotpwd-pg{
+        padding-top: 113px;
+    }
 
     .forgetpwd-heading {
         padding: 20px 20px;
@@ -34,7 +37,8 @@
 
 .check-email-wrapper{
     width: 389px;
-    height: auto;
+    height: fit-content;
+    height: -moz-fit-content;
     background: #FFFFFF;
     border: 1px solid #C4C4C4;
     box-shadow: 0px 2px 7px #4EEBF5;
@@ -42,9 +46,21 @@
     text-align: center;
 }
 
+@media (max-width:576px){
+    .check-email-wrapper{
+        width: 316px;
+    }
+}
+
 .check-email-wrapper .check-email-icon{
     margin: auto;
     display: block;
+}
+
+@media (max-width:576px) {
+    .check-email-wrapper .check-email-icon{
+        width: 65px;
+    }
 }
 
 .check-email-wrapper h1{
@@ -55,8 +71,21 @@
     line-height: 1.2;
 }
 
+@media (max-width:576px){
+    .check-email-wrapper h1{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+}
+
 .check-email-wrapper p{
     font-family: var(--pp-font-assistant) !important;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.85);
+}
+
+@media (max-width:576px){
+    .check-email-wrapper p{
+        margin-bottom: 0;
+    }
 }
