@@ -130,4 +130,5 @@ input:-webkit-autofill {
     box-shadow: 0px 2px 4px #4EEBF5;
     font-size: 16px;
     outline: 0;
+    white-space: nowrap;
 }
