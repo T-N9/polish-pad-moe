@@ -118,7 +118,9 @@ input:-webkit-autofill {
 }
 
 .forgetpwd-email-wrapper .bth-btn {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 155px;
     height: 44px;
     margin: auto;
